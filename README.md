@@ -30,19 +30,22 @@
 
 
 ### main work 1 : 미세먼지 데이터 분석 및 Deeplearning!
-- 4년의 기상정보 데이터 수집
+- 4년의 기상정보 데이터 수집 : 분석시 계절에 따른 미세먼지 동향을 볼 수 있었다.
 ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/f6fda958-07b4-415a-9be1-57279337154b)
-: 분석시 계절에 따른 미세먼지 동향을 볼 수 있었다.
 
 - 데이터 전처리
   -불필요한 column 삭제
-![image](https://github.com/bin2da97/projectPmDust/assets/117819102/45986800-287d-4748-9f31-9807749d787a)
+  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/45986800-287d-4748-9f31-9807749d787a)
+
   -nan 값과, 미세먼지가 400이 넘어가는 이상치는 제거
-![image](https://github.com/bin2da97/projectPmDust/assets/117819102/dc314198-afc5-418a-a796-fc87d84a7f92)
+  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/dc314198-afc5-418a-a796-fc87d84a7f92)
+
   - x,y 데이터 분리 (미세먼지는 종속 변수 그 외는 독립 변수)
-  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6c0f9274-8064-4446-8091-65a180268357)
+  - ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6c0f9274-8064-4446-8091-65a180268357)
+  
   - 정규화
     ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6b436de3-b445-4f2e-b6f4-1db2c7fb3306)
+    
   - train, test 데이터 분리
     ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/389d5ef3-183c-4255-a6d6-cefe409ce380)
     ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/ebd6c83e-8530-41e8-97f6-5491fbdea5bf)
