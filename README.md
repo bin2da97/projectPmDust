@@ -28,12 +28,8 @@
 - 딥러닝 모델 직접 구현을 통해 수업 시간과 인공지능 수학 스터디에서 배웠던 선형대수 ,미적분, 선형회귀,Logistic Regression , 신경망, 경사하강법에  대한  심층적 이해
 - 미세먼지 데이터 활용하여 딥러닝을 통한 예측 시스템 개발에 대한 부족함과 연구 필요성을 느낌
 
-## 프로젝트 요약
 
-# main page
-![image](https://github.com/bin2da97/projectPmDust/assets/117819102/5f0944de-c7e3-4f3e-ba3a-b2208de36d03)
-
-# main work1 미세먼지 데이터 분석 및 Deeplearning
+### main work 1 : 미세먼지 데이터 분석 및 Deeplearning
   - 4년의 기상정보 데이터 수집 : 분석시 계절에 따른 미세먼지 동향을 볼 수 있었다.
   - 데이터 전처리
     -불필요한 column 삭제
@@ -60,6 +56,53 @@
     ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/2922cd05-a798-4c47-b709-b16956ae4e97)
 
 
+### main work 2 : API 연동 및 웹 페이지 데이터 제공
+![image](https://github.com/bin2da97/projectPmDust/assets/117819102/73db4c98-da30-4ea6-a1e9-efc5e545e67d)
+![image](https://github.com/bin2da97/projectPmDust/assets/117819102/981ec9ed-bac5-4f4f-8022-baf4c3633a54)
+
+- 작업 내용
+  - 지도 클릭 시 클릭 지역 실시간 미세먼지 데이터 제공
+  - 등급에 따른 색상 변경
+  - Flask 서버 미세먼지 API 연동
+  - 필요에 맞게 데이터 형태 처리(Pandas 활용)
+  - 지도 생성 및 클릭 시 이벤트 구현
+
+ 
+### main work 3 : 회원가입 & 회원 가입
+
+#### 회원 가입
+![image](https://github.com/bin2da97/projectPmDust/assets/117819102/fe80c47d-ee82-4d67-b10e-585658c5221e)
+![image](https://github.com/bin2da97/projectPmDust/assets/117819102/879c5620-e35c-46a3-a692-e0bfd94a10c1)
+
+- 작업 내용
+  -Form을 활용한 회원가입, 소셜 회원가입
+    /signup 엔드 포인트로 POST 요청이 들어오면, 클라이언트에서 전송한 폼 데이터 추출
+  - 중복여부 확인, 유효성 검사, 이메일 형식 확인 및 안내
+  - 이미지 업로드 시, 해당 아이디로 폴더 생성하여 이미지 저장, DB에 이미지 경로 저장
+  - 얼굴 인식 딥러닝 학습을 위해 이미지를 사용하여 KNN 분류 훈련 실행
+
+ #### 로그인
+ ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/f73f06e6-a12b-459e-a435-08e7dcc6b2dd)
+
+- 작업 내용
+  - Form 활용 로그인, 소셜 로그인 
+  - /signin 엔드 포인트로 POST 요청이 들어오면, 클라이언트가 제공한 JSON 데이터를 받아오고 DB에서 조회
+  - 로그인 성공 시, 클라이언트에게 성공 메시지와 함께 발급된 토큰을 전달
+  - 비밀번호가 일치하지 않거나 아이디가 존재하지 않는 경우 오류 메시지를 반환
+
+  #### 얼굴인식 로그인
+  - 외장 캠 사용
+    
+  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/390f3c3b-1259-4df7-93ef-087a0565733a)
+  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/4e84eda4-e3de-4790-a031-6d7e117daeb9)
+
+- 작업 내용  
+  - 얼굴 인식 로그인 버튼 클릭시,  사용자를 식별하고 로그인을 수행 
+  - /facelogin 엔드 포인트로 GET 요청이 들어오면, 얼굴 인식을 시작
+  - OpenCV와 face_recognition 라이브러리를 사용하여 얼굴을 감지하고 인식
+  - 회원가입 시 미리 훈련된 모델을 사용하여 가장 유사한 얼굴 식별
+  - 인증 성공 시, 해당 사용자의 정보 데이터베이스에서 조회하고 토큰 생성
+  - 인증 실패 하거나 아이디가 존재하지 않는 경우 오류 메시지를 반환
 
 
 
