@@ -1,4 +1,4 @@
-![image](https://github.com/bin2da97/projectPmDust/assets/117819102/22bb7f2e-3a3a-492d-910b-9c7130206cf2)# projectPmDust
+# projectPmDust
 한국소프트웨어산업협회 -  빅데이터를 활용한 풀스택 개발자 양성과정 / 국제컴퓨터아트학원 천호캠퍼스 세 번째 팀프로젝트
 
 - 프로젝트 주제 : 미세먼지 빅데이터 분석 및 사전 예보 웹사이트 개발 
@@ -31,20 +31,25 @@
 
 ### main work 1 : 미세먼지 데이터 분석 및 Deeplearning!
 - 4년의 기상정보 데이터 수집 : 분석시 계절에 따른 미세먼지 동향을 볼 수 있었다.
+
 ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/f6fda958-07b4-415a-9be1-57279337154b)
 
 - 데이터 전처리
   -불필요한 column 삭제
+
   ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/45986800-287d-4748-9f31-9807749d787a)
 
   -nan 값과, 미세먼지가 400이 넘어가는 이상치는 제거
+
   ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/dc314198-afc5-418a-a796-fc87d84a7f92)
 
   - x,y 데이터 분리 (미세먼지는 종속 변수 그 외는 독립 변수)
-  - ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6c0f9274-8064-4446-8091-65a180268357)
+
+![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6c0f9274-8064-4446-8091-65a180268357)
   
   - 정규화
-    ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6b436de3-b445-4f2e-b6f4-1db2c7fb3306)
+
+![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6b436de3-b445-4f2e-b6f4-1db2c7fb3306)
     
   - train, test 데이터 분리
     ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/389d5ef3-183c-4255-a6d6-cefe409ce380)
