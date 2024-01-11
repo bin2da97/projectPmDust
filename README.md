@@ -65,7 +65,25 @@
     - DENSE 레이어(16개 뉴런)는 16개의 뉴런을 가진 밀집층으로 이전 레이어의 출력을 입력받아 비선형 함수를 사용하여 입력 데이터의 패턴 학습
     - DENSE 레이어(SEQUENCE_Y 개의 뉴런)는 시퀀스의 각 위치에서 예측해야 하는 출력 값의 개수에 맞게 뉴런을 가진 밀집층으로 모델이 시퀀스의 각 요소에 대한 출력을 생성하도록 도우며, 컨볼루션 신경망(CNN)과 재귀 신경망(RNN)의 조합으로 시퀀스 데이터에서 패턴을 학습하여 예측하고자 하는 결과를 생성하는데 사용
 
-![image](https://github.com/bin2da97/projectPmDust/assets/117819102/a2e28e12-a91c-4cce-99b7-facd50895d8b)
+  - model compile & train
+  
+  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/fa6fe03e-eb72-469f-947c-945feccca0ed)
+
+  ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/a0a9b4b7-4363-4f3f-b0af-4935d619aa0b)
+
+  - train data
+
+    ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/60a83609-d164-4077-972c-ae60d3ddbb65)
+
+  - validation data
+
+    ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/6a7c1a7c-5028-46cb-aa87-69fa91b15cd4)
+
+  - predict data
+
+    ![image](https://github.com/bin2da97/projectPmDust/assets/117819102/2922cd05-a798-4c47-b709-b16956ae4e97)
+
+
 
 
 
