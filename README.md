@@ -8,7 +8,7 @@
 ## Team 9교시 : 단아 지현 [선빈](https://github.com/bin2da97).
 
 ### skill
-- Python, Flask, tensorflow, Mysql
+- Python, Flask, pandas, tensorflow, Mysql
 - Javascript, React , JQuery, Chart.js, D3.js
 - Vscode, pycharm, jupyter notebook
 
